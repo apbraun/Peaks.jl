@@ -8,8 +8,8 @@ export peakprom
 struct Maxima; end
 struct Minima; end
 
-for (extrema, comps, Extrema) in ((maxima, (:>, minimum, max), Maxima),
-                       (minima, (:<, maximum, min), Minima))
+for (comps, Extrema) in (((:>, minimum, max), Maxima),
+                       ((:<, maximum, min), Minima))
 
     comp, argcomp1, argcomp2 = comps
 
